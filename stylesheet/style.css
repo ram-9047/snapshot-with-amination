@@ -1,0 +1,199 @@
+/*....................general.............................*/
+.wrapper{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+body{
+	font-family: 'Raleway', sans-serif;
+}
+/*...............................SMOKED...............................*/
+.header{
+	height: 100vh;
+	background: #000;
+}
+.header h1{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+	font-size: 5rem;
+	letter-spacing: 0.2rem; 
+	color: #ddd;
+}
+.header span{
+	opacity: 0;
+	animation: animate 1s linear forwards;
+}
+@keyframes animate{
+	0%{
+		opacity: 0;
+		/*transform: translate3d(50px, -100px, 15px);*/
+		transform: rotateY(90deg);
+		filter: blur(20px);
+		/*transform: rotate3d(50px,-100px,15px);*/
+
+	}
+	100%{
+		opacity: 50;
+		transform:rotateY(0deg);
+		filter: blur(0);
+	}
+}
+video{
+	object-fit: cover;
+}
+.header span:nth-child(1){
+	animation-delay: 1s;
+}
+.header span:nth-child(2){
+	animation-delay: 1.5s;
+}
+.header span:nth-child(3){
+	animation-delay: 2s;
+}
+.header span:nth-child(4){
+	animation-delay: 2.5s;
+}
+.header span:nth-child(5){
+	animation-delay: 3s;
+}
+.header span:nth-child(6){
+	animation-delay: 3.25s;
+}.header span:nth-child(7){
+	animation-delay: 3.5s;
+}
+.header span:nth-child(8){
+	animation-delay: 4s;
+}
+/*..................................section-1......................*/
+.section1{
+	background-image: url("../assets/images/a.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+.img{
+	width: 100%;	
+}
+.section1 h1{
+	font-size: 4rem;
+	font-weight: 550;
+	line-height: 1.75rem;
+	margin-left: 0.5rem;
+	padding-top: 18rem;
+}
+.section1 p{
+	font-size: 2rem;
+	font-weight: 400;
+	line-height:1.75rem;
+	margin-left: 0.5rem;
+	margin-top: 2rem;
+}
+/*................................................whats-new.............................*/
+.whats-new{
+	padding: 3rem 0;
+	background-color: ##777 ;
+	align-items: center;
+}
+.whats-new h2{
+	color: #bcc4d1;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1.75rem;
+	padding-bottom: 1.5rem;
+}
+.whats-new-box-row1 img{
+	width: 25%;
+}
+.button{
+	margin: 1rem 0;
+	box-sizing: border-box;
+	padding: 1rem 3rem;
+	font-size: 1.5rem;
+	border: none;
+	background-color: #2467d4;
+	color: #fff;
+	border-radius: 0.25rem;
+}
+.button:hover {
+	color: #2467d4;
+	background-color: #fff;
+	border: 0.5px solid #2467d4;
+	transition-delay: .1s;
+}
+/*........................................section-3..................................*/
+.section3-col1{
+	width: 50%;
+	background-color: #abb0b0;
+	box-sizing: border-box;
+	padding: 1rem;
+}
+.section3-col1 h3{
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+	padding: 0.5rem 1.5rem;
+}
+.section3-col1 p{
+	line-height: 1.75rem;
+	padding-left: 2rem;
+}
+i{
+	color: blue;	
+	font-size: 1.5rem;
+	padding: 1rem 1.5rem;
+}
+.section3-col2{
+	width: 50%;
+	background-color: #e6ebed;
+	box-sizing: border-box;
+	padding: 2rem;
+}
+.section3-flex{
+	display: flex;
+	flex-wrap: wrap;
+}
+.section3-col2 h3{
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+}
+.section3-col2 .form-style{
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.75rem;
+}
+.name input{
+	padding-top: 1.25rem;
+	width: 100%;
+}
+.name{
+	width: 45%;
+	box-sizing: border-box;
+	margin-left: 0.5rem;
+}
+.message{
+	padding: 4rem 0;
+	width: 100%
+}
+/*.........................................footer................................*/
+.footer{
+	background-color: #dfe4eb;
+	padding: 4rem 0;
+	align-items: center;
+}
+/*..........................................gallery................................*/
+.gallery h3{
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 400;
+	padding: 1.5rem 0;
+}
